@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StorageController {
     final FileStorageService fileStorageService;
 
+    @Autowired
     public StorageController(FileStorageService fileStorageService) {
         this.fileStorageService = fileStorageService;
     }

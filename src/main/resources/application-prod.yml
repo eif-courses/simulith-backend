@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
+    username: ${PROD_DB_USERNAME}
+    password: ${PROD_DB_PASSWORD}
+    name: spring-blog
+  sql:
+    init:
+      platform: postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+debug: false
+server:
+  port: 3000
+
+bezkoder:
+  app:
+    jwtCookieName: bezkoder
+    jwtSecret: bezKoderSecretKey
+    jwtExpirationMs: 86400000
+# The following is standard Spring Security OAuth2 configuration.
+# App Properties
+
+#  bezkoder.app.jwtSecret= bezKoderSecretKey
+#  bezkoder.app.jwtExpirationMs= 86400000
