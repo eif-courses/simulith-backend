@@ -1,6 +1,6 @@
 debug: false
 server:
-  port: 3000
+  8080
 
 # App Properties
 #  bezkoder.app.jwtCookieName= bezkoder
