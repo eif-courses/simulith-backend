@@ -1,0 +1,1 @@
+keytool -genkeypair -alias sim -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore sim.p12 -validity 10000 -ext san=dns:simulith.space
